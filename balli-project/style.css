@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+
+}
+.app-jsx{
+    background:linear-gradient(#01016c,#212121);
+    /* background: linear-gradient(red,black); */
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+}
+/* navbarrrrr------------------------------------ */
+.navbar{
+    /* background-color: #212122; */
+    border-right: 2px solid #fff;
+    color: #fff;
+    width: 20vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    padding: 4vh 0;
+}
+.navbar ul{
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+    border-top: 2px solid #fff;
+    width: 80%;
+    padding: 4vh 0 0 4vh ;
+    list-style: none;
+}
+
+/* main araa------------------------------------ */
+
+.main-area{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+    height: 100vh; 
+}
+.story-area{
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1vh;
+}
+.story-area img{
+    border-radius: 100%;
+}
+.post-area {
+    display: flex;
+    flex-direction: column; 
+    /* justify-content: center; */
+    align-items: center;
+    width: 60vw;
+    /* height: 100vh;  */
+    /* background-color: burlywood;  */
+    overflow-y: auto; 
+    scrollbar-width: none;
+    padding: 10px; 
+    gap: 12vh; 
+    /* background-color: #212122; */
+
+}
+
+.post-card {
+    background-color: #50505080;
+    backdrop-filter: blur(12px);
+    border-radius: 2vh;
+    /* border: 1px solid #ddd;  */
+    border-radius: 10px; 
+    padding: 20px; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 70%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1vh;
+}
+
+.post-card img {
+    width: 80%; 
+    height: 70%;
+    /* background-color: blueviolet; */
+    border-radius: 10px; 
+}
+
+.post-card p {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.post-card ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    padding: 0;
+    margin: 0;
+}
+
+.post-card ul li {
+    cursor: pointer;
+    padding: 10px;
+    font-size: 1em;
+    color: #ddd;
+    transition: color 0.3s;
+}
+
+.post-card ul li:hover {
+    color: #000; 
+}
+
+/* sidebarr----------------------------------------- */
+.sidebar{
+    width: 20vw;
+    height: 100vh;
+    /* background-color: #212122; */
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    align-items: center;
+    padding: 12px;
+    border-left:2px solid #fff ;
+}
+.box1{
+    height: 50vh;
+    width: 90%;
+    background-color: #50505080;
+    backdrop-filter: blur(12px);
+    border-radius: 2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1vh;
+
+}
+.box1 img{
+    width: 100px;
+    border-radius: 100%;
+}
+.id-details{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 3vh;
+}
+.id-details ul{
+    text-align: center;
+    list-style: none;
+}
+
+.friendlist{
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    overflow: auto;
+    scrollbar-width: none;
+}
+.friend-card{
+    display: flex;
+    background-color: #50505080;
+    backdrop-filter: blur(12px);
+    border-radius: 12vh;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vh;
+    padding:1vh ;
+    color: #fff;
+}
+.friend-card img{
+    background-color: #000;
+    width: 50px;
+    border-radius: 100%;
+
+}
+.friend-card button{
+    padding: 1vh 3vh ;
+    margin-left: 4vh;
+    border-radius: 2vh;
+    border:2px solid #055bfa ;
+    background-color: transparent;
+    color: #055bfa;
+}
